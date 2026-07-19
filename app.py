@@ -1,9 +1,12 @@
 """Media Mirror — Streamlit arayüzü."""
+import json
+
 import streamlit as st
 
 from src import config
 from src.pipeline import Pipeline
 from src.services import memory, tmdb
+from src.services.card import generate_card
 
 st.set_page_config(page_title="Media Mirror", page_icon="🪞", layout="centered")
 
@@ -15,7 +18,9 @@ def run_analysis(item: dict) -> None:
         st.session_state.report_view = {
             "title": cached["title"],
             "year": cached["year"],
+            "media_type": cached["media_type"],
             "report_md": cached["report_md"],
+            "analysis": json.loads(cached["analysis_json"] or "{}"),
             "source": "önbellek",
         }
         return
@@ -38,7 +43,9 @@ def run_analysis(item: dict) -> None:
     st.session_state.report_view = {
         "title": result["details"]["title"],
         "year": result["details"]["year"],
+        "media_type": result["details"]["media_type"],
         "report_md": result["report_md"],
+        "analysis": {} if result["honest_refusal"] else result["analysis"],
         "source": "düzeltme turlu analiz" if result["revised"] else "analiz",
     }
 
@@ -70,7 +77,9 @@ with st.sidebar:
             st.session_state.report_view = {
                 "title": full["title"],
                 "year": full["year"],
+                "media_type": full["media_type"],
                 "report_md": full["report_md"],
+                "analysis": json.loads(full["analysis_json"] or "{}"),
                 "source": "arşiv",
             }
 
@@ -121,3 +130,21 @@ if view:
     if view["source"] in ("önbellek", "arşiv"):
         st.info(f"Bu rapor {view['source']}ten anında yüklendi. 🗂️")
     st.markdown(view["report_md"])
+
+    if view.get("analysis"):
+        st.divider()
+        try:
+            card_png = generate_card(
+                view["title"], view["year"], view.get("media_type", "movie"), view["analysis"]
+            )
+        except Exception:
+            card_png = None
+        if card_png:
+            with st.expander("📸 Paylaşılabilir özet kart"):
+                st.image(card_png, width=420)
+                st.download_button(
+                    "Kartı indir (PNG)",
+                    data=card_png,
+                    file_name=f"media-mirror-{view['title'].lower().replace(' ', '-')}.png",
+                    mime="image/png",
+                )

@@ -3,11 +3,9 @@
 Story numaraları [BACKLOG.md](../../BACKLOG.md) ile aynıdır. Kart ilerledikçe satırı ilgili bölüme taşıyın.
 
 ## 📋 To Do
-- #12 (P1) Streamlit Community Cloud deployment
-- #13 (P2) Paylaşılabilir özet kart
+- #12 (P1) Streamlit Community Cloud deployment — GitHub hesabı taşındıktan sonra
 
 ## 🔨 In Progress
-- #6 (P0) Streamlit arayüzü — kod hazır, tarayıcıda uçtan uca akış kontrolü kaldı
 
 ## ✅ Done
 - Kapsam yeniden yapılandırma + README/BACKLOG (19 Temmuz)
@@ -19,3 +17,6 @@ Story numaraları [BACKLOG.md](../../BACKLOG.md) ile aynıdır. Kart ilerledikç
 - #9 Yokluk = bulgu — Arabistanlı Lawrence'ta temsil yokluğu bulgu olarak raporlandı
 - #10, #11 Hafıza — arşiv listesi ve önbellek HIT doğrulandı
 - Kota dayanıklılığı: 429'da API'nin önerdiği süreyle otomatik yeniden deneme + bozuk JSON'da tekrar (19 Temmuz)
+- #6 Streamlit arayüzü — AppTest ile arama→seçim→rapor→arşiv akışı otomatik doğrulandı (19 Temmuz)
+- #13 Paylaşılabilir özet kart — PNG üretici + indirme butonu, gerçek analizle görsel kontrol yapıldı (19 Temmuz)
+- Kalite: 9 birim testi (kota ayrıştırma, hafıza, kart), özel tema, Cloud font paketi (19 Temmuz)

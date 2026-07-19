@@ -48,6 +48,7 @@ Her analiz şu sabit bölümlerden oluşur:
 - **4 agent'lı AI orkestrasyonu** (aşağıda detaylı mimari)
 - Türkçe, yapılandırılmış feminist analiz raporu
 - **Analiz arşivi ve önbellek:** geçmiş analizler listelenir, tekrar sorgular önbellekten döner
+- **Paylaşılabilir özet kart:** her rapordan tek tıkla indirilebilir PNG sosyal medya kartı
 - Streamlit web arayüzü
 - **Canlı yayın:** Streamlit Community Cloud üzerinde (API anahtarları secrets ile)
 
@@ -125,7 +126,16 @@ src/
 │   └── critic_agent.py
 └── services/
     ├── tmdb.py         # TMDb API istemcisi
-    └── memory.py       # SQLite analiz arşivi + önbellek
+    ├── memory.py       # SQLite analiz arşivi + önbellek
+    └── card.py         # paylaşılabilir PNG özet kart üretici
+tests/                  # birim testleri (ağ/anahtar gerektirmez)
+packages.txt            # Streamlit Cloud font paketi (kart için)
+.streamlit/config.toml  # arayüz teması
+```
+
+### Testler
+```bash
+python -m unittest discover -s tests
 ```
 
 ## Hedef Kitle
@@ -155,7 +165,7 @@ Bkz. [BACKLOG.md](./BACKLOG.md)
 | Kriter | Puan | Media Mirror'daki karşılığı |
 |---|---|---|
 | İhtiyaç ve Çözüm Eşleşmesi | 20 | Bechdel gibi tek boyutlu araçların ötesinde, karakter düzeyinde nitel feminist analiz ihtiyacı |
-| Kullanıcı Değeri ve Deneyimi | 10 | Tek girdiyle yapılandırılmış rapor; belirsiz aramada seçtirme; geçmiş analizler arşivi |
+| Kullanıcı Değeri ve Deneyimi | 10 | Tek girdiyle yapılandırılmış rapor; belirsiz aramada seçtirme; geçmiş analizler arşivi; indirilebilir özet kart |
 | Pazar Potansiyeli | 10 | Medya okuryazarlığı eğitimi, içerik eleştirisi ve genel izleyici kitlesi |
 | Fonksiyonel Yeterlilik | 15 | Uçtan uca çalışan akış: arama → analiz → rapor → arşiv, canlı yayında |
 | Ürün Bütünlüğü | 10 | Sabit rapor şablonu, kenar durum kuralları, tutarlı Türkçe çıktı |
