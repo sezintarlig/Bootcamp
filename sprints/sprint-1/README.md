@@ -3,7 +3,7 @@
 ## Sprint Hedefi
 Takımın kurulması, rollerin dağıtılması ve proje fikrinin belirlenip akademiye iletilmesi.
 
-> Sprint sonunda tutulan orijinal review/retrospektif: [sprint-1-review-orijinal.md](./sprint-1-review-orijinal.md)
+> Sprint sonunda tutulan orijinal review/retrospektif: [review-orijinal.md](./review-orijinal.md)
 
 ## Ne Yaşandı
 - Takımlar 12 Haziran'da açıklandı; takım 5 kişi olarak atandı.

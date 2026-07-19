@@ -160,7 +160,7 @@ Bkz. [BACKLOG.md](./BACKLOG.md)
 - **Daily Scrum:** Takım üyeleriyle iletişim kurulamadığı için proje tek kişiyle yürütülmektedir; toplantı yapılabilecek bir ekip iletişim kanalı bulunmamaktadır. Günlük ilerleme commit geçmişi ve sprint raporları üzerinden izlenebilir.
 - **Sprint board update:** Sprint 1'de işler doğrudan repo dosyaları üzerinden takip edilmiştir (README, BACKLOG commit'leri).
 - **Ürün Durumu:** Bu sprintte kod geliştirme yoktur; ürün tanımı ve backlog repoya eklenmiştir.
-- **Sprint Review:** İlk ürün tanımı (nicel "temsil kartı" fikri) ve backlog tamamlandı; TMDb API erişimi alındı; API test kodu geliştirme ortamı hazır olmadığından Sprint 2'ye devredildi. Katılımcı: Sezin Tarlığ (solo). Detay: [sprint-1 raporu](./sprints/sprint-1-raporu.md) · [orijinal review](./sprints/sprint-1-review-orijinal.md)
+- **Sprint Review:** İlk ürün tanımı (nicel "temsil kartı" fikri) ve backlog tamamlandı; TMDb API erişimi alındı; API test kodu geliştirme ortamı hazır olmadığından Sprint 2'ye devredildi. Katılımcı: Sezin Tarlığ (solo). Detay: [sprint-1 klasörü](./sprints/sprint-1/) · [orijinal review](./sprints/sprint-1/review-orijinal.md)
 - **Sprint Retrospective:** Kapsamı daraltma kararı işleri netleştirdi; GitHub'a ilk dosya yüklemede teknik deneyimsizlik zorladı; solo devam kararıyla roller tek kişide toplandı.
 
 # Sprint 2 (6 – 19 Temmuz 2026)
@@ -169,16 +169,16 @@ Bkz. [BACKLOG.md](./BACKLOG.md)
 - **Daily Scrum:** Proje tek kişiyle yürütüldüğünden günlük toplantı kanalı yoktur; günlük ilerleme commit geçmişinden izlenebilir. Sprint 3'te günlük notlar [daily-scrum-notlari.md](./sprints/sprint-3/daily-scrum-notlari.md) dosyasında tutulmaktadır.
 - **Sprint board update:** Board, repo içinde markdown olarak tutulmaktadır: [sprint board](./sprints/sprint-3/sprint-board.md). Sprint 2 sonu görünümü:
 
-  ![Sprint board](./sprints/sprint-2-belgeleri/board-sprint2-sonu.png)
+  ![Sprint board](./sprints/sprint-2/belgeler/board-sprint2-sonu.png)
 
 - **Ürün Durumu:** Ekran görüntüleri:
 
-  ![Arama ekranı](./sprints/sprint-2-belgeleri/urun-1-arama.png)
-  ![Yapım seçimi](./sprints/sprint-2-belgeleri/urun-2-secim.png)
-  ![Analiz raporu](./sprints/sprint-2-belgeleri/urun-3-rapor.png)
-  ![Paylaşılabilir özet kart](./sprints/sprint-2-belgeleri/urun-4-kart.png)
+  ![Arama ekranı](./sprints/sprint-2/belgeler/urun-1-arama.png)
+  ![Yapım seçimi](./sprints/sprint-2/belgeler/urun-2-secim.png)
+  ![Analiz raporu](./sprints/sprint-2/belgeler/urun-3-rapor.png)
+  ![Paylaşılabilir özet kart](./sprints/sprint-2/belgeler/urun-4-kart.png)
 
-- **Sprint Review:** Ürün baştan tanımlandı (nicel temsil kartı → feminist perspektiften nitel kadın karakter analizi); aynı gün MVP çekirdeği kodlandı ve gerçek API'lerle uçtan uca test edildi (4 agent'lı pipeline, hafıza katmanı, arayüz, özet kart, 9 birim testi). Katılımcı: Sezin Tarlığ (solo). Detay ve alınan kararlar tablosu: [sprint-2 raporu](./sprints/sprint-2-raporu.md)
+- **Sprint Review:** Ürün baştan tanımlandı (nicel temsil kartı → feminist perspektiften nitel kadın karakter analizi); aynı gün MVP çekirdeği kodlandı ve gerçek API'lerle uçtan uca test edildi (4 agent'lı pipeline, hafıza katmanı, arayüz, özet kart, 9 birim testi). Katılımcı: Sezin Tarlığ (solo). Detay ve alınan kararlar tablosu: [sprint-2 klasörü](./sprints/sprint-2/)
 - **Sprint Retrospective:** Kapsam sorunları teslime 2 hafta kala köklü çözüldü; fikrin netleşmesi uzun sürdü, sprintin büyük bölümü kod üretmeden geçti; Sprint 3 günlük hedeflerle ve günlük notlarla yürütülecek.
 
 # Sprint 3 (20 Temmuz – 2 Ağustos 2026) — devam ediyor

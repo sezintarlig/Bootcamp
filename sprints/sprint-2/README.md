@@ -1,5 +1,7 @@
 # Sprint 2 Raporu (6 – 19 Temmuz 2026)
 
+> Bu sprintin görsel kanıtları (ürün ekran görüntüleri + sprint board): [belgeler/](./belgeler/)
+
 ## Sprint Hedefi
 Ürün kapsamının tanımlanması ve proje belgelerinin (README, backlog) oluşturulması.
 
