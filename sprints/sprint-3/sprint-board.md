@@ -3,11 +3,14 @@
 Story numaraları [BACKLOG.md](../../BACKLOG.md) ile aynıdır. Kart ilerledikçe satırı ilgili bölüme taşıyın.
 
 ## 📋 To Do
-- #12 (P1) Streamlit Community Cloud deployment — GitHub hesabı taşındıktan sonra
+- #12 (P1) Streamlit Community Cloud deployment
+- Farklı yapımlarla gerçek kullanım testi + cila
+- 3 dk tanıtım videosu (YouTube)
+- Teslim formu (2 Ağustos 23:59)
 
 ## 🔨 In Progress
 
-## ✅ Done
+## ✅ Done — Sprint 2 sonunda tamamlanıp devralınan temel (19 Temmuz)
 - Kapsam yeniden yapılandırma + README/BACKLOG (19 Temmuz)
 - Proje iskeleti: TMDb servisi, 4 agent, pipeline, hafıza katmanı, Streamlit arayüzü (19 Temmuz)
 - #1, #2 Arama + seçtirme — Türkçe başlık dahil TMDb testleriyle doğrulandı (19 Temmuz)

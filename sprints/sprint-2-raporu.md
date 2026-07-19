@@ -9,6 +9,7 @@
   1. **Teknik belirsizlik:** "Karakter ajansı"nın TMDb verisinden nicel olarak çıkarılıp çıkarılamayacağı netleştirilemedi.
   2. **Vizyon uyumsuzluğu:** Asıl anlatılmak istenen şeyin sayısal bir dağılım değil, kadın karakterlerin konumuna dair **nitel, feminist bir yorum** olduğu netleşti.
 - 19 Temmuz'da yapılandırılmış bir kapsam sorgulama oturumu yapıldı; ürün baştan tanımlandı.
+- Netleşen kapsamın ardından aynı gün MVP çekirdeği kodlandı ve gerçek API'lerle test edildi: TMDb servisi, 4 agent'lı pipeline, hafıza katmanı, Streamlit arayüzü, özet kart ve 9 birim testi.
 
 ## Alınan Kararlar (19 Temmuz kapsam oturumu)
 | Konu | Karar |
@@ -25,12 +26,13 @@
 
 ## Sprint Sonu Durumu
 - ✅ Ürün kapsamı netleşti, README ve BACKLOG yeniden yazıldı
+- ✅ MVP çekirdeği kodlandı ve gerçek API'lerle uçtan uca test edildi (backlog #1–#11, #13)
 - ✅ Son sprint gün bazında planlandı
-- ❌ Kod geliştirme başlamadı (tamamı Son Sprint'te — plan buna göre daraltıldı)
+- ⏭️ Son Sprint'e devreden: deployment (#12), gerçek kullanım testi/cila, video ve teslim seti
 
 ## Retrospektif
 | | |
 |---|---|
-| **İyi giden** | Kapsam sorunları teslime 2 hafta kala fark edilip köklü biçimde çözüldü; belirsiz kısımlar (ajans ölçümü) ürüne girmeden ayıklandı |
-| **Zorlayan** | Fikrin netleşmesi beklenenden uzun sürdü; kodlamaya ayrılan süre tek sprinte sıkıştı |
-| **Uyarlama** | Son sprint günlük hedeflerle yürütülecek; P0 story'ler bitmeden P1'e geçilmeyecek; her gün kısa daily scrum notu tutulacak |
+| **İyi giden** | Kapsam sorunları teslime 2 hafta kala fark edilip köklü biçimde çözüldü; belirsiz kısımlar (ajans ölçümü) ürüne girmeden ayıklandı; net kapsam sayesinde MVP tek günde kodlanabildi |
+| **Zorlayan** | Fikrin netleşmesi beklenenden uzun sürdü; sprintin büyük bölümü kod üretmeden geçti |
+| **Uyarlama** | Son sprint günlük hedeflerle yürütülecek; her gün kısa daily scrum notu tutulacak; kalan işler (deploy, video) erken bitirilip tampon bırakılacak |
