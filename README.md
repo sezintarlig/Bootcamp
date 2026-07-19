@@ -95,6 +95,39 @@ flowchart TD
 | Hafıza/önbellek | SQLite |
 | Deployment | Streamlit Community Cloud |
 
+## Kurulum ve Çalıştırma
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+cp .env.example .env   # TMDB_API_KEY ve GEMINI_API_KEY değerlerini doldurun
+
+streamlit run app.py
+```
+
+- **TMDb anahtarı:** https://www.themoviedb.org/settings/api (ücretsiz, v3 API Key)
+- **Gemini anahtarı:** https://aistudio.google.com/apikey (ücretsiz kota)
+- Streamlit Cloud'da yayınlarken anahtarlar `.env` yerine **Secrets** bölümüne aynı adlarla girilir.
+
+### Proje Yapısı
+```
+app.py                  # Streamlit arayüzü
+src/
+├── config.py           # anahtar/ayar yönetimi (.env + Streamlit secrets)
+├── pipeline.py         # orkestrasyon: Veri → Analiz → Rapor → Eleştirmen
+├── agents/
+│   ├── base.py         # Gemini çağrısını saran agent temel sınıfı
+│   ├── data_agent.py   # TMDb doğrulama + analiz bağlamı (deterministik)
+│   ├── analysis_agent.py
+│   ├── report_agent.py
+│   └── critic_agent.py
+└── services/
+    ├── tmdb.py         # TMDb API istemcisi
+    └── memory.py       # SQLite analiz arşivi + önbellek
+```
+
 ## Hedef Kitle
 1. **Genel izleyici kitlesi:** Film/dizi izleyenler, ebeveynler, öğretmenler, medya okuryazarlığı eğitimcileri — izledikleri yapımlardaki kadın temsilini daha bilinçli okumak isteyen herkes
 2. **Akademik/uzman kitle (roadmap):** Medya çalışmaları, iletişim, kadın çalışmaları alanında araştırmacılar

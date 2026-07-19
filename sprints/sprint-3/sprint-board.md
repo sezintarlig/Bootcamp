@@ -3,6 +3,10 @@
 Story numaraları [BACKLOG.md](../../BACKLOG.md) ile aynıdır. Kart ilerledikçe satırı ilgili bölüme taşıyın.
 
 ## 📋 To Do
+- #12 (P1) Streamlit Community Cloud deployment
+- #13 (P2) Paylaşılabilir özet kart
+
+## 🔨 In Progress — kod yazıldı, gerçek API anahtarlarıyla uçtan uca test bekliyor
 - #1 (P0) Film/dizi adıyla arama
 - #2 (P0) Çoklu eşleşmede seçtirme
 - #3 (P0) Veri Agent — TMDb doğrulama + karakter listesi
@@ -14,10 +18,7 @@ Story numaraları [BACKLOG.md](../../BACKLOG.md) ile aynıdır. Kart ilerledikç
 - #9 (P1) Kadın karakter yokluğu = bulgu
 - #10 (P1) Analiz arşivi (SQLite + Geçmiş Analizler)
 - #11 (P1) Önbellekten anında dönüş
-- #12 (P1) Streamlit Community Cloud deployment
-- #13 (P2) Paylaşılabilir özet kart
-
-## 🔨 In Progress
 
 ## ✅ Done
 - Kapsam yeniden yapılandırma + README/BACKLOG (19 Temmuz)
+- Proje iskeleti: TMDb servisi, 4 agent, pipeline, hafıza katmanı, Streamlit arayüzü (19 Temmuz — derleme + arayüz açılış kontrolü yapıldı)
