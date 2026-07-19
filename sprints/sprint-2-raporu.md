@@ -4,7 +4,7 @@
 Ürün kapsamının tanımlanması ve proje belgelerinin (README, backlog) oluşturulması.
 
 ## Ne Yaşandı
-- İlk ürün tanımı yazıldı: "Media Mirror" — film karakter verilerinden **nicel** cinsiyet dağılımı + karakter ajansı çıkaran ve paylaşılabilir "farkındalık kartı" üreten bir araç.
+- Sprint 1'de yazılan ilk ürün tanımı ("Media Mirror" — film karakter verilerinden **nicel** cinsiyet dağılımı + karakter ajansı çıkaran ve paylaşılabilir "farkındalık kartı" üreten araç) üzerinde çalışıldı.
 - Sprint sonunda bu kapsamın iki zayıflığı görüldü:
   1. **Teknik belirsizlik:** "Karakter ajansı"nın TMDb verisinden nicel olarak çıkarılıp çıkarılamayacağı netleştirilemedi.
   2. **Vizyon uyumsuzluğu:** Asıl anlatılmak istenen şeyin sayısal bir dağılım değil, kadın karakterlerin konumuna dair **nitel, feminist bir yorum** olduğu netleşti.
