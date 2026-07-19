@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
 DB_PATH = os.getenv("MEDIA_MIRROR_DB", "media_mirror.db")
 
 
